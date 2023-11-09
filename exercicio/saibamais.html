@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dia D Ubiqua</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       /* Estilos para a galeria de fotos */
+       .gallery {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery-item {
+            flex: 1;
+            max-width: calc(33.333% - 10px);
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            display: block;
+        }
+
+        .caption {
+            position: absolute;
+            background-color: rgba(14, 3, 44, 0.7);
+            color: #fff;
+            padding: 10px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechConnect Uninorte</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <content>
+        <h2>Serviços TechConnect Uninorte!</h2>
+        <br>
+
+        <ul class="gallery">
+            <li class="gallery-item">
+                <img src="img/serv.jpg" alt="Imagem 1">
+                <div class="caption">Desenvolvimento de Software e Aplicativos Móveis</div>
+            </li>
+            <li class="gallery-item">
+                <img src="img/serv1.jpg" alt="Imagem 2">
+                <div class="caption">Design de Interface de Usuário (UI) e Experiência do Usuário (UX)</div>
+            </li>
+            <li class="gallery-item">
+                <img src="img/serv2.jpg" alt="Imagem 3">
+                <div class="caption">Consultoria em Tecnologia</div>
+            </li>
+          
+        </ul>
+      
+               
+        </content>
+
+        <content>
+            
+            <br>
+        <ul class="gallery">
+            <li class="gallery-item">
+                <img src="img/serv3.jpg" alt="Imagem 4">
+                <div class="caption">Marketing Digital</div>
+            </li>
+            <li class="gallery-item">
+                <img src="img/serv4.jpeg" alt="Imagem 5">
+                <div class="caption">Segurança Cibernética</div>
+            </li>
+            <li class="gallery-item">
+                <img src="img/serv6.jpg" alt="Imagem 6">
+                <div class="caption">Desenvolvimento de Jogos</div>
+            </li>
+            
+        </ul>
+    </content>
+        
+   
+    
+    <footer>
+        &copy; 2023 Alunos
+    </footer>
+</body>
+</html>
